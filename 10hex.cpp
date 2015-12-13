@@ -1,4 +1,4 @@
-#ifdef __linux__
+#if defined(__linux__) || defined(__CYGWIN__) || defined(__MINGW32__) || defined(__GNUC__) || defined(__BORLANDC__)
 #include <strings.h>
 #define stricmp strcasecmp
 #define strnicmp strncasecmp
@@ -344,7 +344,7 @@ New potential rules
            unique_count = ((possible_chars_freq[0]!=0)?1:0) + ((possible_chars_freq[1]!=0)?1:0) + ((possible_chars_freq[2]!=0)?1:0) + ((possible_chars_freq[3]!=0)?1:0) + ((possible_chars_freq[4]!=0)?1:0) + ((possible_chars_freq[5]!=0)?1:0) + ((possible_chars_freq[6]!=0)?1:0) + ((possible_chars_freq[7]!=0)?1:0) + ((possible_chars_freq[8]!=0)?1:0) + ((possible_chars_freq[9]!=0)?1:0) + ((possible_chars_freq[10]!=0)?1:0) + ((possible_chars_freq[11]!=0)?1:0) + ((possible_chars_freq[12]!=0)?1:0) + ((possible_chars_freq[13]!=0)?1:0) + ((possible_chars_freq[14]!=0)?1:0) + ((possible_chars_freq[15]!=0)?1:0);
 
            //++counter;
-           //++uniques_counter[unique_count-1];
+           ++uniques_counter[unique_count-1];
 
            if (((desired_uniques==0)&&(min_uniques==0)) || (desired_uniques==unique_count) || ((desired_uniques==0)&&(min_uniques>0)&&(unique_count>=min_uniques)&&(unique_count<=max_uniques))) {
             ++counter;
