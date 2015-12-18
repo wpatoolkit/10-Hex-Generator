@@ -1,4 +1,4 @@
-# Hex Generator
+# 10 Hex Keyspace Reducer
 <b>What's new</b><br>
 Version 1.5 now includes a pattern analyzer (10hex.html) than can perform in-depth analytics of known valids, faster piping speed and more keyspace reducing rules.
 <br><br>
