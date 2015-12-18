@@ -112,37 +112,37 @@ You can optionally specify any of these parameters to further refine your output
 Offers significant time savings but with a higher risk of failure by using tighter differentials (the total distance between characters).<br> 
 
 `-evenonly`<br>
-Will only output even numbers<br>
+Will only output even numbers.<br>
 
 `-oddonly`<br>
-Will only output odd numbers<br>
+Will only output odd numbers.<br>
 
 `-random`<br>
-Will randomize its output while still maintaining rules<br>
+Will randomize its output while still maintaining rules.<br>
 
 `-lower`<br>
-Forces all output to be lowercase<br>
+Forces all output to be lowercase (this is the default).<br>
 
 `-upper`<br>
-Forces all output to be uppercase<br>
+Forces all output to be uppercase.<br>
 
 `-len8`<br>
-Only outputs 8-length hex digits<br>
+Only outputs 8-length hex digits.<br>
 
 `-len9`<br>
-Only outputs 9-length hex digits<br>
+Only outputs 9-length hex digits.<br>
 
 `-no0`<br>
-Ignores all combinations which have a 0 in them<br>
+Ignores all combinations which have a 0 in them.<br>
  
 `-no1`<br>
-Ignores all combinations which have a 1 in them<br>
+Ignores all combinations which have a 1 in them.<br>
  
 `-no01`<br>
-Ignores all combinations which have a 0 or a 1 in them<br>
+Ignores all combinations which have a 0 or a 1 in them.<br>
 
 `-Xuniques`<br>
-Only outputs combinations which have X unique characters in them (typically 6, 7, 8 or 9)<br>
+Only outputs combinations which have X unique characters in them (typically 6, 7, 8 or 9).<br>
 
 `-Xminuniques`<br>
 Only outputs combinations which have a minimum of X unique characters in them.<br>
@@ -151,7 +151,7 @@ Only outputs combinations which have a minimum of X unique characters in them.<b
 Only outputs combinations which start with X (can be 0-F).<br>
 
 `-start X`<br>
-Start on combination X (i.e. -start 100 will start on combo #100))<br>
+Start on combination X (i.e. -start 100 will start on combo #100)).<br>
 
 `-stop X`<br>
-Stop on combination X (i.e. -stop 200 will stop on combo #200)<br>
+Stop on combination X (i.e. -stop 200 will stop on combo #200).<br>
