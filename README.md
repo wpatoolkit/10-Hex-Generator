@@ -33,7 +33,6 @@ Only combinations which meet these criteria will be printed:<br>
 &nbsp;&bull; when c1 equals c3, c4 is not equal to c2 (eliminates 4,294,967,296 combinations)<br>
 &nbsp;&bull; when c1 equals c3, c4 is not +1 to c2 (eliminates 4,026,531,840 combinations)<br>
 &nbsp;&bull; when c1 equals c3, c4 is not equal to c3 (eliminates 4,294,967,296 combinations)<br>
-&nbsp;&bull; when c3 equals c5, c4 is not equal to c6<br>
 &nbsp;&bull; c4 is not -15 to c3 (eliminates 4,294,967,296 combinations)<br>
 &nbsp;&bull; c4 is not -14 to c3 (eliminates 8,589,934,592 combinations)<br>
 &nbsp;&bull; c4 is not +14 to c3 (eliminates 8,589,934,592 combinations)<br>
