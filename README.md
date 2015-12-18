@@ -1,6 +1,6 @@
 # 10 Hex Keyspace Reducer
 <b>What's new</b><br>
-Version 1.5 now includes a pattern analyzer (10hex.html) than can perform in-depth analytics of known valids, faster piping speed and more keyspace reducing rules.
+Version 1.5 now includes a 10 hex key analyzer (10hex.html) than can perform in-depth analytics of known valids, faster piping speed and more keyspace reducing rules.
 <br><br>
 <b>What is it?</b><br>
 This is a small program written in C++ that will output all possible combinations of 10 hex digits while skipping over certain combinations it believes to be invalid.
