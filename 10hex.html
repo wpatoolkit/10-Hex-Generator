@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="windows-1252">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="robots" content="noindex,nofollow" />
+<title>10 Hex Key Analyzer</title>
+<style type="text/css">
+td { padding-right: 21px; }
+.td { text-align:left; vertical-align:top; } 
+.th { text-align:left; vertical-align:top; text-decoration:underline; font-weight:bold; }
+</style>
+<script type="text/javascript">
+/*
+Char2 (0 to 15)
+0: 10 (5.99%)
+1: 25 (14.97%)
+2: 20 (11.98%)
+3: 17 (10.18%)
+4: 13 (7.78%)
+5: 7 (4.19%)
+6: 14 (8.38%)
+7: 16 (9.58%)
+8: 5 (2.99%)
+9: 7 (4.19%)
+10: 7 (4.19%)
+11: 8 (4.79%)
+12: 9 (5.39%)
+13: 2 (1.2%)
+14: 5 (2.99%)
+15: 2 (1.2%)
+
+Char3 (2 to 24)
+2: 9 (5.39%)
+3: 5 (2.99%)
+4: 13 (7.78%)
+5: 15 (8.98%)
+6: 8 (4.79%)
+7: 7 (4.19%)
+8: 9 (5.39%)
+9: 10 (5.99%)
+10: 14 (8.38%)
+11: 15 (8.98%)
+12: 15 (8.98%)
+13: 3 (1.8%)
+14: 2 (1.2%)
+15: 12 (7.19%)
+16: 3 (1.8%)
+17: 6 (3.59%)
+19: 3 (1.8%)
+20: 7 (4.19%)
+21: 3 (1.8%)
+22: 3 (1.8%)
+23: 3 (1.8%)
+24: 2 (1.2%)
+
+Char4 (3 to 37)
+3: 2 (1.2%)
+4: 3 (1.8%)
+5: 1 (0.6%)
+6: 2 (1.2%)
+7: 6 (3.59%)
+8: 10 (5.99%)
+9: 5 (2.99%)
+10: 7 (4.19%)
+11: 14 (8.38%)
+12: 9 (5.39%)
+13: 5 (2.99%)
+14: 8 (4.79%)
+15: 10 (5.99%)
+16: 16 (9.58%)
+17: 9 (5.39%)
+18: 7 (4.19%)
+19: 6 (3.59%)
+20: 9 (5.39%)
+21: 4 (2.4%)
+22: 4 (2.4%)
+23: 5 (2.99%)
+24: 5 (2.99%)
+25: 3 (1.8%)
+26: 1 (0.6%)
+27: 4 (2.4%)
+28: 2 (1.2%)
+29: 6 (3.59%)
+30: 1 (0.6%)
+31: 1 (0.6%)
+32: 1 (0.6%)
+37: 1 (0.6%)
+
+Char5 (7 to 50)
+7: 1 (0.6%)
+8: 2 (1.2%)
+9: 1 (0.6%)
+10: 4 (2.4%)
+11: 8 (4.79%)
+12: 6 (3.59%)
+13: 4 (2.4%)
+14: 7 (4.19%)
+15: 9 (5.39%)
+16: 4 (2.4%)
+17: 5 (2.99%)
+18: 18 (10.78%)
+19: 7 (4.19%)
+20: 7 (4.19%)
+21: 6 (3.59%)
+22: 7 (4.19%)
+23: 5 (2.99%)
+24: 12 (7.19%)
+25: 8 (4.79%)
+26: 6 (3.59%)
+27: 8 (4.79%)
+28: 4 (2.4%)
+29: 1 (0.6%)
+30: 5 (2.99%)
+31: 2 (1.2%)
+32: 4 (2.4%)
+33: 3 (1.8%)
+34: 2 (1.2%)
+35: 3 (1.8%)
+36: 1 (0.6%)
+38: 1 (0.6%)
+39: 3 (1.8%)
+40: 1 (0.6%)
+42: 1 (0.6%)
+50: 1 (0.6%)
+
+Char6 (8 to 54)
+8: 1 (0.6%)
+11: 1 (0.6%)
+12: 4 (2.4%)
+13: 5 (2.99%)
+14: 3 (1.8%)
+15: 5 (2.99%)
+16: 2 (1.2%)
+17: 5 (2.99%)
+18: 4 (2.4%)
+19: 4 (2.4%)
+20: 11 (6.59%)
+21: 4 (2.4%)
+22: 8 (4.79%)
+23: 8 (4.79%)
+24: 7 (4.19%)
+25: 6 (3.59%)
+26: 12 (7.19%)
+27: 4 (2.4%)
+28: 10 (5.99%)
+29: 6 (3.59%)
+30: 2 (1.2%)
+31: 10 (5.99%)
+32: 6 (3.59%)
+33: 6 (3.59%)
+34: 6 (3.59%)
+35: 1 (0.6%)
+36: 2 (1.2%)
+37: 4 (2.4%)
+38: 2 (1.2%)
+39: 3 (1.8%)
+40: 3 (1.8%)
+41: 1 (0.6%)
+42: 1 (0.6%)
+43: 2 (1.2%)
+44: 5 (2.99%)
+47: 1 (0.6%)
+48: 1 (0.6%)
+54: 1 (0.6%)
+
+Char7 (13 to 62)
+13: 1 (0.6%)
+14: 2 (1.2%)
+16: 5 (2.99%)
+17: 2 (1.2%)
+18: 4 (2.4%)
+19: 4 (2.4%)
+20: 5 (2.99%)
+21: 2 (1.2%)
+22: 5 (2.99%)
+23: 1 (0.6%)
+24: 6 (3.59%)
+25: 5 (2.99%)
+26: 8 (4.79%)
+27: 8 (4.79%)
+28: 10 (5.99%)
+29: 8 (4.79%)
+30: 9 (5.39%)
+31: 4 (2.4%)
+32: 7 (4.19%)
+33: 11 (6.59%)
+34: 3 (1.8%)
+35: 2 (1.2%)
+36: 6 (3.59%)
+37: 8 (4.79%)
+38: 7 (4.19%)
+39: 3 (1.8%)
+40: 4 (2.4%)
+41: 4 (2.4%)
+42: 2 (1.2%)
+43: 3 (1.8%)
+44: 1 (0.6%)
+45: 3 (1.8%)
+46: 2 (1.2%)
+47: 3 (1.8%)
+48: 2 (1.2%)
+49: 3 (1.8%)
+52: 1 (0.6%)
+55: 1 (0.6%)
+58: 1 (0.6%)
+62: 1 (0.6%)
+
+Char8 (15 to 66)
+15: 1 (0.6%)
+17: 2 (1.2%)
+18: 2 (1.2%)
+19: 2 (1.2%)
+20: 4 (2.4%)
+21: 4 (2.4%)
+22: 5 (2.99%)
+24: 3 (1.8%)
+25: 3 (1.8%)
+26: 5 (2.99%)
+27: 3 (1.8%)
+28: 5 (2.99%)
+29: 5 (2.99%)
+30: 5 (2.99%)
+31: 4 (2.4%)
+32: 6 (3.59%)
+33: 5 (2.99%)
+34: 9 (5.39%)
+35: 9 (5.39%)
+36: 7 (4.19%)
+37: 4 (2.4%)
+38: 3 (1.8%)
+39: 10 (5.99%)
+40: 5 (2.99%)
+41: 7 (4.19%)
+42: 3 (1.8%)
+43: 4 (2.4%)
+44: 7 (4.19%)
+45: 3 (1.8%)
+46: 4 (2.4%)
+47: 2 (1.2%)
+48: 3 (1.8%)
+49: 3 (1.8%)
+50: 3 (1.8%)
+51: 2 (1.2%)
+52: 3 (1.8%)
+53: 2 (1.2%)
+54: 3 (1.8%)
+59: 1 (0.6%)
+61: 2 (1.2%)
+62: 1 (0.6%)
+63: 2 (1.2%)
+66: 1 (0.6%)
+
+Char9 (18 to 78)
+18: 1 (0.6%)
+20: 2 (1.2%)
+22: 6 (3.59%)
+23: 3 (1.8%)
+24: 1 (0.6%)
+25: 5 (2.99%)
+26: 2 (1.2%)
+27: 4 (2.4%)
+28: 1 (0.6%)
+29: 4 (2.4%)
+30: 1 (0.6%)
+31: 3 (1.8%)
+32: 1 (0.6%)
+33: 4 (2.4%)
+34: 5 (2.99%)
+35: 2 (1.2%)
+36: 6 (3.59%)
+37: 7 (4.19%)
+38: 5 (2.99%)
+39: 6 (3.59%)
+40: 4 (2.4%)
+41: 7 (4.19%)
+42: 9 (5.39%)
+43: 7 (4.19%)
+44: 6 (3.59%)
+45: 6 (3.59%)
+46: 5 (2.99%)
+47: 4 (2.4%)
+48: 3 (1.8%)
+49: 7 (4.19%)
+50: 1 (0.6%)
+51: 5 (2.99%)
+52: 7 (4.19%)
+53: 6 (3.59%)
+54: 2 (1.2%)
+55: 2 (1.2%)
+56: 1 (0.6%)
+57: 2 (1.2%)
+58: 2 (1.2%)
+59: 1 (0.6%)
+61: 1 (0.6%)
+63: 2 (1.2%)
+65: 1 (0.6%)
+67: 3 (1.8%)
+69: 1 (0.6%)
+71: 1 (0.6%)
+74: 1 (0.6%)
+78: 1 (0.6%)
+
+Char10 (19 to 79)
+19: 1 (0.6%)
+22: 1 (0.6%)
+24: 2 (1.2%)
+25: 1 (0.6%)
+26: 3 (1.8%)
+28: 3 (1.8%)
+29: 4 (2.4%)
+30: 3 (1.8%)
+31: 6 (3.59%)
+32: 3 (1.8%)
+33: 3 (1.8%)
+34: 3 (1.8%)
+35: 2 (1.2%)
+36: 1 (0.6%)
+37: 3 (1.8%)
+39: 5 (2.99%)
+40: 4 (2.4%)
+41: 8 (4.79%)
+42: 2 (1.2%)
+43: 9 (5.39%)
+44: 5 (2.99%)
+45: 2 (1.2%)
+46: 4 (2.4%)
+47: 6 (3.59%)
+48: 3 (1.8%)
+49: 7 (4.19%)
+50: 7 (4.19%)
+51: 8 (4.79%)
+52: 3 (1.8%)
+53: 7 (4.19%)
+54: 9 (5.39%)
+55: 7 (4.19%)
+56: 1 (0.6%)
+57: 1 (0.6%)
+58: 4 (2.4%)
+59: 1 (0.6%)
+60: 5 (2.99%)
+61: 2 (1.2%)
+62: 3 (1.8%)
+63: 3 (1.8%)
+64: 1 (0.6%)
+65: 1 (0.6%)
+68: 1 (0.6%)
+69: 1 (0.6%)
+70: 2 (1.2%)
+75: 2 (1.2%)
+76: 1 (0.6%)
+77: 1 (0.6%)
+79: 2 (1.2%)
+
+*/
+
+var n_factor = 10;
+
+function hex2dec(hex) {
+ //return parseInt(hex, 16);
+ if ((hex == 'a') || (hex == 'A')) { return 10; }
+ else if ((hex == 'b') || (hex == 'B')) { return 11; }
+ else if ((hex == 'c') || (hex == 'C')) { return 12; }
+ else if ((hex == 'd') || (hex == 'D')) { return 13; }
+ else if ((hex == 'e') || (hex == 'E')) { return 14; }
+ else if ((hex == 'f') || (hex == 'F')) { return 15; }
+ else { return Number(hex); }
+}
+
+function dec2hex(dec) {
+ //var hexDigits="0123456789ABCDEF"; return( hexDigits[ dec >> 4 ] + hexDigits[ dec & 15 ] );
+ if (dec == 10) { return 'A'; }
+ else if (dec == 11) { return 'B'; }
+ else if (dec == 12) { return 'C'; }
+ else if (dec == 13) { return 'D'; }
+ else if (dec == 14) { return 'E'; }
+ else if (dec == 15) { return 'F'; }
+ else { return dec; }
+}
+
+function add_node(cb_id, cb_label, insert_into) {
+ if (typeof insert_into === 'undefined') { insert_into = 'results'; }
+ var div = document.createElement("DIV");
+ div.id = cb_id;
+ //var cb = document.createElement("INPUT");
+ //cb.setAttribute("type", "checkbox");
+ //cb.setAttribute("checked", true);
+ //cb.id = cb_id;
+ //div.appendChild(cb);
+ var textnode = document.createTextNode(cb_label);
+ div.appendChild(textnode);
+ document.getElementById(insert_into).appendChild(div);
+}
+
+function del_child_nodes(cb_id) {
+ if (document.getElementById(cb_id)) {
+  var node = document.getElementById(cb_id);
+  while (node.firstChild) { node.removeChild(node.firstChild); }
+ }
+}
+
+function find_patterns() {
+var debug = 0;
+
+del_child_nodes("results");
+del_child_nodes("results_num_uniques");
+del_child_nodes("results_num_numbers");
+del_child_nodes("results_num_letters");
+del_child_nodes("results_num_differential");
+del_child_nodes("results_num_differential5");
+del_child_nodes("results_num_differential_n");
+del_child_nodes("results_num_sequential");
+del_child_nodes("results_num_identical");
+del_child_nodes("char2_traits");
+del_child_nodes("char3_traits");
+del_child_nodes("char4_traits");
+del_child_nodes("char5_traits");
+del_child_nodes("char6_traits");
+del_child_nodes("results_multi_occur");
+del_child_nodes("results_not_begin");
+
+document.getElementById("results_table").style.visibility = "visible";
+
+var c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, p;
+var char_freq = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var unique_counts = [0,0,0,0,0,0,0,0,0,0]; var unique_count = 0;
+var number_counts = [0,0,0,0,0,0,0,0,0,0]; var number_count = 0;
+var letter_counts = [0,0,0,0,0,0,0,0,0,0]; var letter_count = 0;
+var occurrence_counts = [0,0,0,0,0,0,0,0,0,0];
+var differential_counts = [0,0,0,0,0,0,0,0,0,0]; var differential_factor = 0;
+var differential5_counts = [0,0,0,0,0,0,0,0,0,0]; var differential_factor5 = 0;
+var differentialn_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var differential_factorn = 0;
+var tmp_cnt = 0;
+var total_count = 0;
+var identical_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var sequential_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var begins_with_counts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+var c2toc1_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c3toc2_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c3toc1_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c4toc3_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c4toc2_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c4toc1_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c5toc4_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c5toc3_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c5toc2_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c5toc1_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c6toc5_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c6toc4_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c6toc3_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c6toc2_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+var c6toc1_tests = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+
+var lines = document.getElementById('keys').value.split("\n");
+
+for (var i=0;i<lines.length;i++) {
+ if (lines[i].length == 0) { continue; }
+ total_count++;
+ for (j=0;j<=15;j++) { char_freq[j] = 0; }
+ c1 = (lines[i].length < 1) ? -1 : lines[i].substr(0,1); c1 = hex2dec(c1); if ((c1>=0)&&(c1<=15)) { char_freq[c1]++; }
+ c2 = (lines[i].length < 2) ? -1 : lines[i].substr(1,1); c2 = hex2dec(c2); if ((c2>=0)&&(c2<=15)) { char_freq[c2]++; }
+ c3 = (lines[i].length < 3) ? -1 : lines[i].substr(2,1); c3 = hex2dec(c3); if ((c3>=0)&&(c3<=15)) { char_freq[c3]++; }
+ c4 = (lines[i].length < 4) ? -1 : lines[i].substr(3,1); c4 = hex2dec(c4); if ((c4>=0)&&(c4<=15)) { char_freq[c4]++; }
+ c5 = (lines[i].length < 5) ? -1 : lines[i].substr(4,1); c5 = hex2dec(c5); if ((c5>=0)&&(c5<=15)) { char_freq[c5]++; }
+ c6 = (lines[i].length < 6) ? -1 : lines[i].substr(5,1); c6 = hex2dec(c6); if ((c6>=0)&&(c6<=15)) { char_freq[c6]++; }
+ c7 = (lines[i].length < 7) ? -1 : lines[i].substr(6,1); c7 = hex2dec(c7); if ((c7>=0)&&(c7<=15)) { char_freq[c7]++; }
+ c8 = (lines[i].length < 8) ? -1 : lines[i].substr(7,1); c8 = hex2dec(c8); if ((c8>=0)&&(c8<=15)) { char_freq[c8]++; }
+ c9 = (lines[i].length < 9) ? -1 : lines[i].substr(8,1); c9 = hex2dec(c9); if ((c9>=0)&&(c9<=15)) { char_freq[c9]++; }
+ c10 = (lines[i].length < 10) ? -1 : lines[i].substr(9,1); c10 = hex2dec(c10); if ((c10>=0)&&(c10<=15)) { char_freq[c10]++; }
+ p = (debug == 1) ? " (" + lines[i] + ")" : "";
+
+ // if (c3 == c1), c4 is not equal to c2
+ // if (c3 == c1), c4 is not +1 to c2
+ // if (c4 == c3), c4 is not equal to c1
+ // if (c5 == c3), c6 is not equal to c4
+ // if (c10 == c3), c10 is not equal to c2
+
+ // sequential count
+ if ((c2==(c1+1))&&(c3==(c2+1))) { sequential_counts[0]++; }
+ if ((c3==(c2+1))&&(c4==(c3+1))) { sequential_counts[1]++; }
+ if ((c4==(c3+1))&&(c5==(c4+1))) { sequential_counts[2]++; }
+ if ((c5==(c4+1))&&(c6==(c5+1))) { sequential_counts[3]++; }
+ if ((c6==(c5+1))&&(c7==(c6+1))) { sequential_counts[4]++; }
+ if ((c7==(c6+1))&&(c8==(c7+1))) { sequential_counts[5]++; }
+ if ((c8==(c7+1))&&(c9==(c8+1))) { sequential_counts[6]++; }
+ if ((c9==(c8+1))&&(c10==(c9+1))) { sequential_counts[7]++; }
+ if ((c2==(c1-1))&&(c3==(c2-1))) { sequential_counts[8]++; }
+ if ((c3==(c2-1))&&(c4==(c3-1))) { sequential_counts[9]++; }
+ if ((c4==(c3-1))&&(c5==(c4-1))) { sequential_counts[10]++; }
+ if ((c5==(c4-1))&&(c6==(c5-1))) { sequential_counts[11]++; }
+ if ((c6==(c5-1))&&(c7==(c6-1))) { sequential_counts[12]++; }
+ if ((c7==(c6-1))&&(c8==(c7-1))) { sequential_counts[13]++; }
+ if ((c8==(c7-1))&&(c9==(c8-1))) { sequential_counts[14]++; }
+ if ((c9==(c8-1))&&(c10==(c9-1))) { sequential_counts[15]++; }
+
+ // identical count
+ if (c1==c2) { identical_counts[0]++; }
+ if (c2==c3) { identical_counts[1]++; }
+ if (c3==c4) { identical_counts[2]++; }
+ if (c4==c5) { identical_counts[3]++; }
+ if (c5==c6) { identical_counts[4]++; }
+ if (c6==c7) { identical_counts[5]++; }
+ if (c7==c8) { identical_counts[6]++; }
+ if (c8==c9) { identical_counts[7]++; }
+ if (c9==c10) { identical_counts[8]++; }
+ if ((c1==c2)&&(c2==c3)) { identical_counts[9]++; }
+ if ((c2==c3)&&(c3==c4)) { identical_counts[10]++; }
+ if ((c3==c4)&&(c4==c5)) { identical_counts[11]++; }
+ if ((c4==c5)&&(c5==c6)) { identical_counts[12]++; }
+ if ((c5==c6)&&(c6==c7)) { identical_counts[13]++; }
+ if ((c6==c7)&&(c7==c8)) { identical_counts[14]++; }
+ if ((c7==c8)&&(c8==c9)) { identical_counts[15]++; }
+ if ((c8==c9)&&(c9==c10)) { identical_counts[16]++; }
+
+ // differential factor (0 to 135) (commonly seen 19-79)
+ differential_factor = 0;
+ differential_factor = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4) + Math.abs(c6-c5) + Math.abs(c7-c6) + Math.abs(c8-c7) + Math.abs(c9-c8) + Math.abs(c10-c9);
+ if ((differential_factor>=0)&&(differential_factor<=15)) { differential_counts[0]++; }
+ if ((differential_factor>=16)&&(differential_factor<=30)) { differential_counts[1]++; }
+ if ((differential_factor>=31)&&(differential_factor<=45)) { differential_counts[2]++; }
+ if ((differential_factor>=46)&&(differential_factor<=60)) { differential_counts[3]++; }
+ if ((differential_factor>=61)&&(differential_factor<=75)) { differential_counts[4]++; }
+ if ((differential_factor>=76)&&(differential_factor<=90)) { differential_counts[5]++; }
+ if ((differential_factor>=91)&&(differential_factor<=105)) { differential_counts[6]++; }
+ if ((differential_factor>=106)&&(differential_factor<=120)) { differential_counts[7]++; }
+ if ((differential_factor>=121)&&(differential_factor<=135)) { differential_counts[8]++; }
+ if (differential_factor>=136) { differential_counts[9]++; }
+
+ // differential5 factor (0 to 45)
+ differential_factor5 = 0;
+ differential_factor5 = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4);
+ if ((differential_factor5>=0)&&(differential_factor5<=15)) { differential5_counts[0]++; }
+ if ((differential_factor5>=16)&&(differential_factor5<=30)) { differential5_counts[1]++; }
+ if ((differential_factor5>=31)&&(differential_factor5<=45)) { differential5_counts[2]++; }
+ if ((differential_factor5>=46)&&(differential_factor5<=60)) { differential5_counts[3]++; }
+ if ((differential_factor5>=61)&&(differential_factor5<=75)) { differential5_counts[4]++; }
+ if ((differential_factor5>=76)&&(differential_factor5<=90)) { differential5_counts[5]++; }
+ if ((differential_factor5>=91)&&(differential_factor5<=105)) { differential5_counts[6]++; }
+ if ((differential_factor5>=106)&&(differential_factor5<=120)) { differential5_counts[7]++; }
+ if ((differential_factor5>=121)&&(differential_factor5<=135)) { differential5_counts[8]++; }
+ if (differential_factor5>=136) { differential5_counts[9]++; }
+
+ // differentialn factor (0 to 135)
+ differential_factorn = 0;
+ if (n_factor == 2) { differential_factorn = Math.abs(c2-c1);  }
+ if (n_factor == 3) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2); }
+ if (n_factor == 4) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3); }
+ if (n_factor == 5) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4); }
+ if (n_factor == 6) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4) + Math.abs(c6-c5); }
+ if (n_factor == 7) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4) + Math.abs(c6-c5) + Math.abs(c7-c6); }
+ if (n_factor == 8) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4) + Math.abs(c6-c5) + Math.abs(c7-c6) + Math.abs(c8-c7); }
+ if (n_factor == 9) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4) + Math.abs(c6-c5) + Math.abs(c7-c6) + Math.abs(c8-c7) + Math.abs(c9-c8); }
+ if (n_factor == 10) { differential_factorn = Math.abs(c2-c1) + Math.abs(c3-c2) + Math.abs(c4-c3) + Math.abs(c5-c4) + Math.abs(c6-c5) + Math.abs(c7-c6) + Math.abs(c8-c7) + Math.abs(c9-c8) + Math.abs(c10-c9); }
+ if ((differential_factorn>=0)&&(differential_factorn<=135)) { differentialn_counts[differential_factorn]++; }
+
+ // unique count (commonly seen 6-8)
+ unique_count = 0;
+ unique_count = ((char_freq[0]!=0)?1:0) + ((char_freq[1]!=0)?1:0) + ((char_freq[2]!=0)?1:0) + ((char_freq[3]!=0)?1:0) + ((char_freq[4]!=0)?1:0) + ((char_freq[5]!=0)?1:0) + ((char_freq[6]!=0)?1:0) + ((char_freq[7]!=0)?1:0) + ((char_freq[8]!=0)?1:0) + ((char_freq[9]!=0)?1:0) + ((char_freq[10]!=0)?1:0) + ((char_freq[11]!=0)?1:0) + ((char_freq[12]!=0)?1:0) + ((char_freq[13]!=0)?1:0) + ((char_freq[14]!=0)?1:0) + ((char_freq[15]!=0)?1:0);
+ if (unique_count != 0) { unique_counts[unique_count-1]++; }
+ //for (j=0;j<=10;j++) {
+  //if (unique_count == j) { if (document.getElementById("unique_count_"+j) == null) { add_node("unique_count_"+j, "contains " + j + " uniques" + p); } }
+ //}
+
+ // number count
+ number_count = 0;
+ if ((c1 >= 0) && (c1 <= 9)) { number_count++; }
+ if ((c2 >= 0) && (c2 <= 9)) { number_count++; }
+ if ((c3 >= 0) && (c3 <= 9)) { number_count++; }
+ if ((c4 >= 0) && (c4 <= 9)) { number_count++; }
+ if ((c5 >= 0) && (c5 <= 9)) { number_count++; }
+ if ((c6 >= 0) && (c6 <= 9)) { number_count++; }
+ if ((c7 >= 0) && (c7 <= 9)) { number_count++; }
+ if ((c8 >= 0) && (c8 <= 9)) { number_count++; }
+ if ((c9 >= 0) && (c9 <= 9)) { number_count++; }
+ if ((c10 >= 0) && (c10 <= 9)) { number_count++; }
+ if (number_count != 0) { number_counts[number_count-1]++; }
+ //for (j=0;j<=10;j++) {
+  //if (number_count == j) { if (document.getElementById("num_count_"+j) == null) { add_node("num_count_"+j, "contains " + j + " numbers" + p); } }
+ //}
+
+ // letter count
+ letter_count = 0;
+ if ((c1 >= 10) && (c1 <= 15)) { letter_count++; }
+ if ((c2 >= 10) && (c2 <= 15)) { letter_count++; }
+ if ((c3 >= 10) && (c3 <= 15)) { letter_count++; }
+ if ((c4 >= 10) && (c4 <= 15)) { letter_count++; }
+ if ((c5 >= 10) && (c5 <= 15)) { letter_count++; }
+ if ((c6 >= 10) && (c6 <= 15)) { letter_count++; }
+ if ((c7 >= 10) && (c7 <= 15)) { letter_count++; }
+ if ((c8 >= 10) && (c8 <= 15)) { letter_count++; }
+ if ((c9 >= 10) && (c9 <= 15)) { letter_count++; }
+ if ((c10 >= 10) && (c10 <= 15)) { letter_count++; }
+ if (letter_count != 0) { letter_counts[letter_count-1]++; }
+ //for (j=0;j<=10;j++) {
+  //if (letter_count == j) { if (document.getElementById("letter_count_"+j) == null) { add_node("letter_count_"+j, "contains " + j + " letters" + p); } }
+ //}
+
+ // begins with
+ if ((c1==0)&&(c2==0)) { begins_with_counts[0]++; }
+ if ((c1==1)&&(c2==1)) { begins_with_counts[1]++; }
+ if ((c1==2)&&(c2==2)) { begins_with_counts[2]++; }
+ if ((c1==3)&&(c2==3)) { begins_with_counts[3]++; }
+ if ((c1==4)&&(c2==4)) { begins_with_counts[4]++; }
+ if ((c1==5)&&(c2==5)) { begins_with_counts[5]++; }
+ if ((c1==6)&&(c2==6)) { begins_with_counts[6]++; }
+ if ((c1==7)&&(c2==7)) { begins_with_counts[7]++; }
+ if ((c1==8)&&(c2==8)) { begins_with_counts[8]++; }
+ if ((c1==9)&&(c2==9)) { begins_with_counts[9]++; }
+ if ((c1==10)&&(c2==10)) { begins_with_counts[10]++; }
+ if ((c1==11)&&(c2==11)) { begins_with_counts[11]++; }
+ if ((c1==12)&&(c2==12)) { begins_with_counts[12]++; }
+ if ((c1==13)&&(c2==13)) { begins_with_counts[13]++; }
+ if ((c1==14)&&(c2==14)) { begins_with_counts[14]++; }
+ if ((c1==15)&&(c2==15)) { begins_with_counts[15]++; }
+
+ // 4+ occurrences of any character
+ for (j=0;j<=15;j++) {
+  //if (char_freq[j] >= 4) {
+   //if (document.getElementById("charfreq_" + j + "_" + char_freq[j]) == null) { add_node("charfreq_" + j + "_" + char_freq[j], dec2hex(j) + ": " + char_freq[j] + " times" + " (" + lines[i] + ")","results_multi_occur"); }
+  //}
+  if (char_freq[j] == 4) { occurrence_counts[3]++; }
+  if (char_freq[j] == 5) { occurrence_counts[4]++; }
+  if (char_freq[j] == 6) { occurrence_counts[5]++; }
+  if (char_freq[j] == 7) { occurrence_counts[6]++; }
+  if (char_freq[j] == 8) { occurrence_counts[7]++; }
+  if (char_freq[j] == 9) { occurrence_counts[8]++; }
+  if (char_freq[j] == 10) { occurrence_counts[9]++; }
+ }
+
+ // Char 2 (NEW)
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c2 == (c1+j)) { c2toc1_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+
+ // Char 3 (NEW)
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c3 == (c2+j)) { c3toc2_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c3 == (c1+j)) { c3toc1_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+
+ // Char 4 (NEW)
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c4 == (c3+j)) { c4toc3_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c4 == (c2+j)) { c4toc2_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c4 == (c1+j)) { c4toc1_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+
+ // Char 5 (NEW)
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c5 == (c4+j)) { c5toc4_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c5 == (c3+j)) { c5toc3_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c5 == (c2+j)) { c5toc2_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c5 == (c1+j)) { c5toc1_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+
+ // Char 6 (NEW)
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c6 == (c5+j)) { c6toc5_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c6 == (c4+j)) { c6toc4_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c6 == (c3+j)) { c6toc3_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c6 == (c2+j)) { c6toc2_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+ tmp_cnt=0;
+ for (j=-15;j<=15;j++) {
+  if (c6 == (c1+j)) { c6toc1_tests[tmp_cnt] = true; }
+  tmp_cnt++;
+ }
+
+}
+
+// PRINT CHAR2 TRAITS
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c2toc1_tests[tmp_cnt] == false) { add_node("c2c1_tests_"+j,"char 2 is not " + ((j>=0)?"+":"") + j + " to char 1" + p,"char2_traits"); }
+ tmp_cnt++;
+}
+
+// PRINT CHAR3 TRAITS
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c3toc2_tests[tmp_cnt] == false) { add_node("c3c2_tests_"+j,"char 3 is not " + ((j>=0)?"+":"") + j + " to char 2" + p,"char3_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c3toc1_tests[tmp_cnt] == false) { add_node("c3c1_tests_"+j,"char 3 is not " + ((j>=0)?"+":"") + j + " to char 1" + p,"char3_traits"); }
+ tmp_cnt++;
+}
+
+// PRINT CHAR4 TRAITS
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c4toc3_tests[tmp_cnt] == false) { add_node("c4c3_tests_"+j,"char 4 is not " + ((j>=0)?"+":"") + j + " to char 3" + p,"char4_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c4toc2_tests[tmp_cnt] == false) { add_node("c4c2_tests_"+j,"char 4 is not " + ((j>=0)?"+":"") + j + " to char 2" + p,"char4_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c4toc1_tests[tmp_cnt] == false) { add_node("c4c1_tests_"+j,"char 4 is not " + ((j>=0)?"+":"") + j + " to char 1" + p,"char4_traits"); }
+ tmp_cnt++;
+}
+
+// PRINT CHAR5 TRAITS
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c5toc4_tests[tmp_cnt] == false) { add_node("c5c4_tests_"+j,"char 5 is not " + ((j>=0)?"+":"") + j + " to char 4" + p,"char5_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c5toc3_tests[tmp_cnt] == false) { add_node("c5c3_tests_"+j,"char 5 is not " + ((j>=0)?"+":"") + j + " to char 3" + p,"char5_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c5toc2_tests[tmp_cnt] == false) { add_node("c5c2_tests_"+j,"char 5 is not " + ((j>=0)?"+":"") + j + " to char 2" + p,"char5_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c5toc1_tests[tmp_cnt] == false) { add_node("c5c1_tests_"+j,"char 5 is not " + ((j>=0)?"+":"") + j + " to char 1" + p,"char5_traits"); }
+ tmp_cnt++;
+}
+
+// PRINT CHAR6 TRAITS
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c6toc5_tests[tmp_cnt] == false) { add_node("c6c5_tests_"+j,"char 6 is not " + ((j>=0)?"+":"") + j + " to char 5" + p,"char6_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c6toc4_tests[tmp_cnt] == false) { add_node("c6c4_tests_"+j,"char 6 is not " + ((j>=0)?"+":"") + j + " to char 4" + p,"char6_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c6toc3_tests[tmp_cnt] == false) { add_node("c6c3_tests_"+j,"char 6 is not " + ((j>=0)?"+":"") + j + " to char 3" + p,"char6_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c6toc2_tests[tmp_cnt] == false) { add_node("c6c2_tests_"+j,"char 6 is not " + ((j>=0)?"+":"") + j + " to char 2" + p,"char6_traits"); }
+ tmp_cnt++;
+}
+tmp_cnt=0;
+for (j=-15;j<=15;j++) {
+ if (c6toc1_tests[tmp_cnt] == false) { add_node("c6c1_tests_"+j,"char 6 is not " + ((j>=0)?"+":"") + j + " to char 1" + p,"char6_traits"); }
+ tmp_cnt++;
+}
+
+// PRINT UNIQUE COUNTS
+if (unique_counts[0] > 0) { add_node("one_unique_count","has 1 unique: " + unique_counts[0] + " (" + Math.round((unique_counts[0]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[1] > 0) { add_node("two_unique_count","has 2 uniques: " + unique_counts[1] + " (" + Math.round((unique_counts[1]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[2] > 0) { add_node("three_unique_count","has 3 uniques: " + unique_counts[2] + " (" + Math.round((unique_counts[2]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[3] > 0) { add_node("four_unique_count","has 4 uniques: " + unique_counts[3] + " (" + Math.round((unique_counts[3]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[4] > 0) { add_node("five_unique_count","has 5 uniques: " + unique_counts[4] + " (" + Math.round((unique_counts[4]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[5] > 0) { add_node("six_unique_count","has 6 uniques: " + unique_counts[5] + " (" + Math.round((unique_counts[5]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[6] > 0) { add_node("seven_unique_count","has 7 uniques: " + unique_counts[6] + " (" + Math.round((unique_counts[6]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[7] > 0) { add_node("eight_unique_count","has 8 uniques: " + unique_counts[7] + " (" + Math.round((unique_counts[7]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[8] > 0) { add_node("nine_unique_count","has 9 uniques: " + unique_counts[8] + " (" + Math.round((unique_counts[8]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+if (unique_counts[9] > 0) { add_node("ten_unique_count","has 10 uniques: " + unique_counts[9] + " (" + Math.round((unique_counts[9]/total_count)*100*100)/100 + "%)","results_num_uniques"); }
+
+// PRINT NUMBER COUNTS
+if (number_counts[0] > 0) { add_node("one_number_count","has 1 number: " + number_counts[0] + " (" + Math.round((number_counts[0]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[1] > 0) { add_node("two_number_count","has 2 numbers: " + number_counts[1] + " (" + Math.round((number_counts[1]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[2] > 0) { add_node("three_number_count","has 3 numbers: " + number_counts[2] + " (" + Math.round((number_counts[2]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[3] > 0) { add_node("four_number_count","has 4 numbers: " + number_counts[3] + " (" + Math.round((number_counts[3]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[4] > 0) { add_node("five_number_count","has 5 numbers: " + number_counts[4] + " (" + Math.round((number_counts[4]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[5] > 0) { add_node("six_number_count","has 6 numbers: " + number_counts[5] + " (" + Math.round((number_counts[5]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[6] > 0) { add_node("seven_number_count","has 7 numbers: " + number_counts[6] + " (" + Math.round((number_counts[6]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[7] > 0) { add_node("eight_number_count","has 8 numbers: " + number_counts[7] + " (" + Math.round((number_counts[7]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[8] > 0) { add_node("nine_number_count","has 9 numbers: " + number_counts[8] + " (" + Math.round((number_counts[8]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+if (number_counts[9] > 0) { add_node("ten_number_count","has 10 numbers: " + number_counts[9] + " (" + Math.round((number_counts[9]/total_count)*100*100)/100 + "%)","results_num_numbers"); }
+
+// PRINT LETTER COUNTS
+if (letter_counts[0] > 0) { add_node("one_letter_count","has 1 letter: " + letter_counts[0] + " (" + Math.round((letter_counts[0]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[1] > 0) { add_node("two_letter_count","has 2 letters: " + letter_counts[1] + " (" + Math.round((letter_counts[1]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[2] > 0) { add_node("three_letter_count","has 3 letters: " + letter_counts[2] + " (" + Math.round((letter_counts[2]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[3] > 0) { add_node("four_letter_count","has 4 letters: " + letter_counts[3] + " (" + Math.round((letter_counts[3]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[4] > 0) { add_node("five_letter_count","has 5 letters: " + letter_counts[4] + " (" + Math.round((letter_counts[4]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[5] > 0) { add_node("six_letter_count","has 6 letters: " + letter_counts[5] + " (" + Math.round((letter_counts[5]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[6] > 0) { add_node("seven_letter_count","has 7 letters: " + letter_counts[6] + " (" + Math.round((letter_counts[6]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[7] > 0) { add_node("eight_letter_count","has 8 letters: " + letter_counts[7] + " (" + Math.round((letter_counts[7]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[8] > 0) { add_node("nine_letter_count","has 9 letters: " + letter_counts[8] + " (" + Math.round((letter_counts[8]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+if (letter_counts[9] > 0) { add_node("ten_letter_count","has 10 letters: " + letter_counts[9] + " (" + Math.round((letter_counts[9]/total_count)*100*100)/100 + "%)","results_num_letters"); }
+
+// PRINT DIFFERENTIAL COUNTS
+if (differential_counts[0] > 0) { add_node("differential_group1","Group 1 (0-15): " + differential_counts[0] + " (" + Math.round((differential_counts[0]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[1] > 0) { add_node("differential_group2","Group 2 (16-30): " + differential_counts[1] + " (" + Math.round((differential_counts[1]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[2] > 0) { add_node("differential_group3","Group 3 (31-45): " + differential_counts[2] + " (" + Math.round((differential_counts[2]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[3] > 0) { add_node("differential_group4","Group 4 (46-60): " + differential_counts[3] + " (" + Math.round((differential_counts[3]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[4] > 0) { add_node("differential_group5","Group 5 (61-75): " + differential_counts[4] + " (" + Math.round((differential_counts[4]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[5] > 0) { add_node("differential_group6","Group 6 (76-90): " + differential_counts[5] + " (" + Math.round((differential_counts[5]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[6] > 0) { add_node("differential_group7","Group 7 (91-105): " + differential_counts[6] + " (" + Math.round((differential_counts[6]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[7] > 0) { add_node("differential_group8","Group 8 (106-120): " + differential_counts[7] + " (" + Math.round((differential_counts[7]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[8] > 0) { add_node("differential_group9","Group 9 (121-135): " + differential_counts[8] + " (" + Math.round((differential_counts[8]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+if (differential_counts[9] > 0) { add_node("differential_group10","Group 10 (136+): " + differential_counts[9] + " (" + Math.round((differential_counts[9]/total_count)*100*100)/100 + "%)","results_num_differential"); }
+
+// PRINT DIFFERENTIAL5 COUNTS
+if (differential5_counts[0] > 0) { add_node("differential5_group1","Group 1 (0-15): " + differential5_counts[0] + " (" + Math.round((differential5_counts[0]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[1] > 0) { add_node("differential5_group2","Group 2 (16-30): " + differential5_counts[1] + " (" + Math.round((differential5_counts[1]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[2] > 0) { add_node("differential5_group3","Group 3 (31-45): " + differential5_counts[2] + " (" + Math.round((differential5_counts[2]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[3] > 0) { add_node("differential5_group4","Group 4 (46-60): " + differential5_counts[3] + " (" + Math.round((differential5_counts[3]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[4] > 0) { add_node("differential5_group5","Group 5 (61-75): " + differential5_counts[4] + " (" + Math.round((differential5_counts[4]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[5] > 0) { add_node("differential5_group6","Group 6 (76-90): " + differential5_counts[5] + " (" + Math.round((differential5_counts[5]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[6] > 0) { add_node("differential5_group7","Group 7 (91-105): " + differential5_counts[6] + " (" + Math.round((differential5_counts[6]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[7] > 0) { add_node("differential5_group8","Group 8 (106-120): " + differential5_counts[7] + " (" + Math.round((differential5_counts[7]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[8] > 0) { add_node("differential5_group9","Group 9 (121-135): " + differential5_counts[8] + " (" + Math.round((differential5_counts[8]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+if (differential5_counts[9] > 0) { add_node("differential5_group10","Group 10 (136+): " + differential5_counts[9] + " (" + Math.round((differential5_counts[9]/total_count)*100*100)/100 + "%)","results_num_differential5"); }
+
+// PRINT DIFFERENTIALN COUNTS
+for (j=0;j<=135;j++) {
+ if (differentialn_counts[j] > 0) { add_node("differentialn_" + j, j + ": " + differentialn_counts[j] + " (" + Math.round((differentialn_counts[j]/total_count)*100*100)/100 + "%)", "results_num_differential_n"); }
+}
+
+// PRINT SEQUENTIAL COUNTS
+if (sequential_counts[0] > 0) { add_node("c123_sequential","1-2-3: " + sequential_counts[0] + " (" + Math.round((sequential_counts[0]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[1] > 0) { add_node("c234_sequential","2-3-4: " + sequential_counts[1] + " (" + Math.round((sequential_counts[1]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[2] > 0) { add_node("c345_sequential","3-4-5: " + sequential_counts[2] + " (" + Math.round((sequential_counts[2]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[3] > 0) { add_node("c456_sequential","4-5-6: " + sequential_counts[3] + " (" + Math.round((sequential_counts[3]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[4] > 0) { add_node("c567_sequential","5-6-7: " + sequential_counts[4] + " (" + Math.round((sequential_counts[4]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[5] > 0) { add_node("c678_sequential","6-7-8: " + sequential_counts[5] + " (" + Math.round((sequential_counts[5]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[6] > 0) { add_node("c789_sequential","7-8-9: " + sequential_counts[6] + " (" + Math.round((sequential_counts[6]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[7] > 0) { add_node("c8910_sequential","8-9-10: " + sequential_counts[7] + " (" + Math.round((sequential_counts[7]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[8] > 0) { add_node("c321_sequential","3-2-1: " + sequential_counts[8] + " (" + Math.round((sequential_counts[8]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[9] > 0) { add_node("c432_sequential","4-3-2: " + sequential_counts[9] + " (" + Math.round((sequential_counts[9]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[10] > 0) { add_node("c543_sequential","5-4-3: " + sequential_counts[10] + " (" + Math.round((sequential_counts[10]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[11] > 0) { add_node("c654_sequential","6-5-4: " + sequential_counts[11] + " (" + Math.round((sequential_counts[11]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[12] > 0) { add_node("c765_sequential","7-6-5: " + sequential_counts[12] + " (" + Math.round((sequential_counts[12]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[13] > 0) { add_node("c876_sequential","8-7-6: " + sequential_counts[13] + " (" + Math.round((sequential_counts[13]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[14] > 0) { add_node("c987_sequential","9-8-7: " + sequential_counts[14] + " (" + Math.round((sequential_counts[14]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+if (sequential_counts[15] > 0) { add_node("c1098_sequential","10-9-8: " + sequential_counts[15] + " (" + Math.round((sequential_counts[15]/total_count)*100*100)/100 + "%)","results_num_sequential"); }
+
+// PRINT IDENTICAL COUNTS
+if (identical_counts[0] > 0) { add_node("c1c2_identical","1=2: " + identical_counts[0] + " (" + Math.round((identical_counts[0]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[1] > 0) { add_node("c2c3_identical","2=3: " + identical_counts[1] + " (" + Math.round((identical_counts[1]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[2] > 0) { add_node("c3c4_identical","3=4: " + identical_counts[2] + " (" + Math.round((identical_counts[2]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[3] > 0) { add_node("c4c5_identical","4=5: " + identical_counts[3] + " (" + Math.round((identical_counts[3]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[4] > 0) { add_node("c5c6_identical","5=6: " + identical_counts[4] + " (" + Math.round((identical_counts[4]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[5] > 0) { add_node("c6c7_identical","6=7: " + identical_counts[5] + " (" + Math.round((identical_counts[5]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[6] > 0) { add_node("c7c8_identical","7=8: " + identical_counts[6] + " (" + Math.round((identical_counts[6]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[7] > 0) { add_node("c8c9_identical","8=9: " + identical_counts[7] + " (" + Math.round((identical_counts[7]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[8] > 0) { add_node("c9c10_identical","9=10: " + identical_counts[8] + " (" + Math.round((identical_counts[8]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[9] > 0) { add_node("c1c2c3_identical","1=2=3: " + identical_counts[9] + " (" + Math.round((identical_counts[9]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[10] > 0) { add_node("c2c3c4_identical","2=3=4: " + identical_counts[10] + " (" + Math.round((identical_counts[10]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[11] > 0) { add_node("c3c4c5_identical","3=4=5: " + identical_counts[11] + " (" + Math.round((identical_counts[11]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[12] > 0) { add_node("c4c5c6_identical","4=5=6: " + identical_counts[12] + " (" + Math.round((identical_counts[12]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[13] > 0) { add_node("c5c6c7_identical","5=6=7: " + identical_counts[13] + " (" + Math.round((identical_counts[13]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[14] > 0) { add_node("c6c7c8_identical","6=7=8: " + identical_counts[14] + " (" + Math.round((identical_counts[14]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[15] > 0) { add_node("c7c8c9_identical","7=8=9: " + identical_counts[15] + " (" + Math.round((identical_counts[15]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+if (identical_counts[16] > 0) { add_node("c8c9c10_identical","8=9=10: " + identical_counts[16] + " (" + Math.round((identical_counts[16]/total_count)*100*100)/100 + "%)","results_num_identical"); }
+
+// PRINT BEGINS WITH COUNTS
+if (begins_with_counts[0] == 0) { add_node("doesnotbegin_00","does not begin with 00","results_not_begin"); }
+if (begins_with_counts[1] == 0) { add_node("doesnotbegin_11","does not begin with 11","results_not_begin"); }
+if (begins_with_counts[2] == 0) { add_node("doesnotbegin_22","does not begin with 22","results_not_begin"); }
+if (begins_with_counts[3] == 0) { add_node("doesnotbegin_33","does not begin with 33","results_not_begin"); }
+if (begins_with_counts[4] == 0) { add_node("doesnotbegin_44","does not begin with 44","results_not_begin"); }
+if (begins_with_counts[5] == 0) { add_node("doesnotbegin_55","does not begin with 55","results_not_begin"); }
+if (begins_with_counts[6] == 0) { add_node("doesnotbegin_66","does not begin with 66","results_not_begin"); }
+if (begins_with_counts[7] == 0) { add_node("doesnotbegin_77","does not begin with 77","results_not_begin"); }
+if (begins_with_counts[8] == 0) { add_node("doesnotbegin_88","does not begin with 88","results_not_begin"); }
+if (begins_with_counts[9] == 0) { add_node("doesnotbegin_99","does not begin with 99","results_not_begin"); }
+if (begins_with_counts[10] == 0) { add_node("doesnotbegin_aa","does not begin with aa","results_not_begin"); }
+if (begins_with_counts[11] == 0) { add_node("doesnotbegin_bb","does not begin with bb","results_not_begin"); }
+if (begins_with_counts[12] == 0) { add_node("doesnotbegin_cc","does not begin with cc","results_not_begin"); }
+if (begins_with_counts[13] == 0) { add_node("doesnotbegin_dd","does not begin with dd","results_not_begin"); }
+if (begins_with_counts[14] == 0) { add_node("doesnotbegin_ee","does not begin with ee","results_not_begin"); }
+if (begins_with_counts[15] == 0) { add_node("doesnotbegin_ff","does not begin with ff","results_not_begin"); }
+
+// PRINT MULTI OCCURRENCE COUNT
+if (occurrence_counts[3] > 0) { add_node("multi_occurrence_4", "4 occurrences: " + occurrence_counts[3] + " (" + Math.round((occurrence_counts[3]/total_count)*100*100)/100 + "%)","results_multi_occur"); }
+if (occurrence_counts[4] > 0) { add_node("multi_occurrence_5", "5 occurrences: " + occurrence_counts[4] + " (" + Math.round((occurrence_counts[4]/total_count)*100*100)/100 + "%)","results_multi_occur"); }
+if (occurrence_counts[5] > 0) { add_node("multi_occurrence_6", "6 occurrences: " + occurrence_counts[5] + " (" + Math.round((occurrence_counts[5]/total_count)*100*100)/100 + "%)","results_multi_occur"); }
+if (occurrence_counts[6] > 0) { add_node("multi_occurrence_7", "7 occurrences: " + occurrence_counts[6] + " (" + Math.round((occurrence_counts[6]/total_count)*100*100)/100 + "%)","results_multi_occur"); }
+if (occurrence_counts[7] > 0) { add_node("multi_occurrence_8", "8 occurrences: " + occurrence_counts[7] + " (" + Math.round((occurrence_counts[7]/total_count)*100*100)/100 + "%)","results_multi_occur"); }
+if (occurrence_counts[8] > 0) { add_node("multi_occurrence_9", "9 occurrences: " + occurrence_counts[8] + " (" + Math.round((occurrence_counts[8]/total_count)*100*100)/100 + "%)","results_multi_occur"); }
+if (occurrence_counts[9] > 0) { add_node("multi_occurrence_10", "10 occurrences: " + occurrence_counts[9] + " (" + Math.round((occurrence_counts[9]/total_count)*100*100)/100 + "%)","results_multi_occur"); }
+
+}
+
+</script>
+</head>
+<body>
+<form action="" method="post" style="background-color:inherit;font-family:inherit;">
+
+<label for="keys" style="display:block;font:14px consolas,monospace;">Enter observed 10 hex keys in the box below:</label>
+
+<textarea style="display:block;font:16px consolas,monospace;padding:5px;" name="keys" id="keys" rows="12" cols="80">
+0085b5dde6
+00EA8F80C5
+032ACB7A31
+06f48a28eb
+079A40DEFB
+0848079BFF
+0bc40439b9
+0FB3A0165C
+0FB3FFB0F9
+15903f8a0c
+18013D32E3
+18019285FB
+180199A01F
+18019BD914
+1801AE2F2C
+183a575cbf
+184c42a84d
+18DD3AB249
+19D62A94F8
+1C2D56E083
+1F90188F4B
+1F904891CB
+1F904FBEF7
+1F90AAE956
+1F90DFA061
+23de0bb375
+26620281EF
+27396af8c7
+282eb6f75c
+2dc4b47e9e
+2de98fab8d
+2e2f26ed27
+2e33a8976b
+2eab114200
+2fd817eb9b
+32a892c27a
+34d65f3269
+377714d6b3
+3BC2B03785
+3CBCB07802
+3d67959d65
+3df7bb49f4
+3e5ab33dc3
+44ef2e92fb
+464d5cb1b6
+46919E76E1
+497b655424
+4a7973ec50
+4b3cd82fae
+4d24f59e86
+4E35E2A17A
+4efe33d63d
+4f93ea59fe
+5223cdbf2f
+5294E3EAC2
+5296be96e6
+53bf7dd36d
+5439d5e27b
+5670E3601B
+574545a2cd
+580C05A631
+5A2802F544
+5c560dec7e
+5E00C7B723
+5fe8bf6285
+62636c767b
+634fb586eb
+6386e4a839
+63fd6f93d6
+654cd4e465
+67f3a58696
+6918754E2E
+69237B667A
+6a8c37a2d8
+6c6201676e
+6d5f83f278
+6f86c56a32
+73e8b9aecc
+742da831d2
+742DA831D2
+75169F60EC
+757a7258ad
+75abec657f
+75abecb57f
+75ba855493
+7643d7a6f6
+76d53a9176
+78352d2a5a
+797c6d58d2
+79baec7ad6
+7ac4489633
+7ed7b3d589
+8238ae3e2a
+83fa35c673
+842B159901
+853e9ef69d
+884faf0437
+89d9a36e9b
+8a35b5a6b7
+8a9476fadb
+8f3c4ff833
+8F524DED99
+938BA7378F
+944fd5f6cb
+94e5d2e3fe
+984b995c77
+997c1bb0a6
+997c1bb0a8
+9bf289e37a
+9f47ef2ea7
+9fcb642b84
+a49d285d9e
+a6f656feb8
+a863e6aa99
+a933702036
+a9ef78759e
+aa2e2c6a6d
+abc1234567
+ABC345CBA1
+abf2b36964
+abf95a5f83
+aca6e8698d
+AD96E886EB
+b3c2326a69
+bbfd45236f
+BCD77B3755
+bdee2a7f5c
+BFD896F9D4
+c67e5dd5c3
+c6a6968abf
+c82d83a2e3
+CA24B415B3
+ca74daa855
+cbd45e4dbc
+cf52c42ae7
+d2fe8aedac
+d34a5db4e3
+d72757d3d4
+d72767d3d4
+dcf3ffbcf2
+e228bcf47b
+e2c7a23ebd
+e2d65383ce
+e525f6257e
+E548C386E9
+e574982f2b
+e83337deec
+e9e4247596
+ea4c98ba94
+eabeea65fb
+ecf3695537
+ed8eefce7b
+edef050295
+ef4ecd8293
+f084c7f125
+f25dcbe824
+f3c452e96a
+f3d4cb5c2e
+F3D70D3689
+f4539497b6
+f54ef6bf8c
+f794f98a74
+F8AA1AABA2
+fbaf9c46c3
+fc6e9542f4
+fe4d828dd5
+FF3F179A9B
+ff7ee7777e
+</textarea>
+
+<input type="button" style="display:block;width:250px;margin-top:20px;margin-bottom:20px;padding:10px 20px;font:30px 'Open Sans',calibri,sans-serif" value="Analyze" onclick="find_patterns()" />
+
+<table id="results_table" style="font:14px consolas,monospace;visibility:hidden;">
+<tr>
+<td class="th"># of Uniques</td>
+<td class="th"># of Numbers</td>
+<td class="th"># of Letters</td>
+<td class="th">Consecutive Sequential</td>
+<td class="th">Consecutive Identical</td>
+</tr>
+<tr>
+<td id="results_num_uniques" class="td"></td>
+<td id="results_num_numbers" class="td"></td>
+<td id="results_num_letters" class="td"></td>
+<td id="results_num_sequential" class="td"></td>
+<td id="results_num_identical" class="td"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="th">Character 2 Traits</td>
+<td class="th">Character 3 Traits</td>
+<td class="th">Character 4 Traits</td>
+<td class="th">Character 5 Traits</td>
+<td class="th">Character 6 Traits</td>
+</tr>
+<tr>
+<td id="char2_traits" class="td"></td>
+<td id="char3_traits" class="td"></td>
+<td id="char4_traits" class="td"></td>
+<td id="char5_traits" class="td"></td>
+<td id="char6_traits" class="td"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="th">Does not begin with</td>
+<td class="th">4+ occurrences of any char</td>
+<td class="th">Differential factor (1-5)</td>
+<td class="th">Differential factor (1-10)</td>
+<td class="th">Differential factor (<script type="text/javascript">document.write(n_factor);</script>)</td>
+</tr>
+<tr>
+<td id="results_not_begin" class="td"></td>
+<td id="results_multi_occur" class="td"></td>
+<td id="results_num_differential5" class="td"></td>
+<td id="results_num_differential" class="td"></td>
+<td id="results_num_differential_n" class="td"></td>
+</tr>
+</table>
+
+<div id="results"></div>
+
+<br><br>
+
+</form>
+</body>
+</html>
