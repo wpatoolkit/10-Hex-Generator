@@ -6,9 +6,9 @@ Version 1.5 now includes a pattern analyzer (10hex.html) than can perform in-dep
 This is a small program written in C++ that will output all possible combinations of 10 hex digits while skipping over certain combinations it believes to be invalid.
 <br><br>
 Only combinations which meet these criteria will be printed:<br>
-&nbsp;&bull; must contain 6 to 9 unique characters<br>
-&nbsp;&bull; must contain 4 to 8 numbers<br>
-&nbsp;&bull; must contain 2 to 6 letters<br>
+&nbsp;&bull; must contain 6-9 unique characters (can be expanded to 5-9 with the `-5minuniques` option)<br>
+&nbsp;&bull; must contain 4-8 numbers<br>
+&nbsp;&bull; must contain 2-6 letters<br>
 &nbsp;&bull; no 3 consecutive chars are sequential or reverse sequential (<10% occurrence rate)<br>
 &nbsp;&bull; no 3 consecutive chars are identical (<3% occurrence rate)<br>
 &nbsp;&bull; each character cannot appear more than 3 times (<5% occurrence rate)<br>
