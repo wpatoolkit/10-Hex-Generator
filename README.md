@@ -151,7 +151,7 @@ Only outputs combinations which have a minimum of X unique characters in them.<b
 Only outputs combinations which start with X (can be 0-F).<br>
 
 `-start X`<br>
-Start on combination X (i.e. -start 100 will start on combo #100)).<br>
+Start on combination X (i.e. -start 100 will start on combo 100).<br>
 
 `-stop X`<br>
-Stop on combination X (i.e. -stop 200 will stop on combo #200).<br>
+Stop on combination X (i.e. -stop 200 will stop on combo 200).<br>
