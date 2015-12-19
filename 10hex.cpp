@@ -6,8 +6,11 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <cstdio>
 #include <time.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 //using namespace std;
 int main(int argc, char *argv[]) {
  srand(time(NULL));
@@ -101,14 +104,16 @@ int main(int argc, char *argv[]) {
    if (stricmp(argv[i], "-startswithF") == 0) { slot1_start_at = 15; starts_with_letter = true; }
    if (stricmp(argv[i], "-start") == 0) { make_next_start_at = true; make_next_start_at_cnt = i; }
    if (stricmp(argv[i], "-stop") == 0) { make_next_stop_at = true; make_next_stop_at_cnt = i; }
-   if ((make_next_start_at) && (i == (make_next_start_at_cnt+1))) { std::istringstream str_to_num(argv[i]); str_to_num >> start_at_long; if (!str_to_num) {std::cout << "ERROR: start is not a number" << std::endl; return 1;} make_next_start_at = false; }
-   if ((make_next_stop_at) && (i == (make_next_stop_at_cnt+1))) { std::istringstream str_to_num(argv[i]); str_to_num >> stop_at_long; if (!str_to_num) {std::cout << "ERROR: stop is not a number" << std::endl; return 1;} make_next_stop_at = false; }
+   if ((make_next_start_at) && (i == (make_next_start_at_cnt+1))) { std::istringstream str_to_num(argv[i]); str_to_num >> start_at_long; if (!str_to_num) {std::cout << "ERROR: start is not a number" << "\n"; return 1;} make_next_start_at = false; }
+   if ((make_next_stop_at) && (i == (make_next_stop_at_cnt+1))) { std::istringstream str_to_num(argv[i]); str_to_num >> stop_at_long; if (!str_to_num) {std::cout << "ERROR: stop is not a number" << "\n"; return 1;} make_next_stop_at = false; }
   }
  }
- if ((stop_at_long !=0) && (stop_at_long <= start_at_long)) { std::cout << "ERROR: stop must be greater than start" << std::endl; return 1; }
+ if ((stop_at_long !=0) && (stop_at_long <= start_at_long)) { std::cout << "ERROR: stop must be greater than start" << "\n"; return 1; }
 
  const int MAX_LENGTH = 10;
- char hex_chars[MAX_LENGTH];
+ char hex_chars[MAX_LENGTH+2];
+ hex_chars[MAX_LENGTH] = '\n';
+ hex_chars[MAX_LENGTH+1] = '\0';
  int hex_nums[MAX_LENGTH];
  for (int i=0;i<MAX_LENGTH;++i) { hex_chars[i] = '0'; hex_nums[i] = 0; }
  char possible_chars[16] = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
@@ -145,11 +150,11 @@ int main(int argc, char *argv[]) {
    }
    if (use_len_8) {
     if ((possible_chars_freq[0]+possible_chars_freq[1]+possible_chars_freq[2]+possible_chars_freq[3]+possible_chars_freq[4]+possible_chars_freq[5]+possible_chars_freq[6]+possible_chars_freq[7]+possible_chars_freq[8]+possible_chars_freq[9]) >= 7) { continue; } // cannot contain 7+ numbers
-    std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << std::endl;
+    std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << "\n";
    }
    else if (use_len_9) {
     if ((possible_chars_freq[0]+possible_chars_freq[1]+possible_chars_freq[2]+possible_chars_freq[3]+possible_chars_freq[4]+possible_chars_freq[5]+possible_chars_freq[6]+possible_chars_freq[7]+possible_chars_freq[8]+possible_chars_freq[9]) >= 8) { continue; } // cannot contain 8+ numbers
-    std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << std::endl;
+    std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << "\n";
    }
    else {
     differential = abs(hex_nums[9]-hex_nums[8]) + abs(hex_nums[8]-hex_nums[7]) + abs(hex_nums[7]-hex_nums[6]) + abs(hex_nums[6]-hex_nums[5]) + abs(hex_nums[5]-hex_nums[4]) + abs(hex_nums[4]-hex_nums[3]) + abs(hex_nums[3]-hex_nums[2]) + abs(hex_nums[2]-hex_nums[1]) + abs(hex_nums[1]-hex_nums[0]);
@@ -160,7 +165,7 @@ int main(int argc, char *argv[]) {
     if ((possible_chars_freq[0]>3)||(possible_chars_freq[1]>3)||(possible_chars_freq[2]>3)||(possible_chars_freq[3]>3)||(possible_chars_freq[4]>3)||(possible_chars_freq[5]>3)||(possible_chars_freq[6]>3)||(possible_chars_freq[7]>3)||(possible_chars_freq[8]>3)||(possible_chars_freq[9]>3)||(possible_chars_freq[10]>3)||(possible_chars_freq[11]>3)||(possible_chars_freq[12]>3)||(possible_chars_freq[13]>3)||(possible_chars_freq[14]>3)||(possible_chars_freq[15]>3)) { continue; } // each character cannot appear more than 3 times
     unique_count = ((possible_chars_freq[0]!=0)?1:0) + ((possible_chars_freq[1]!=0)?1:0) + ((possible_chars_freq[2]!=0)?1:0) + ((possible_chars_freq[3]!=0)?1:0) + ((possible_chars_freq[4]!=0)?1:0) + ((possible_chars_freq[5]!=0)?1:0) + ((possible_chars_freq[6]!=0)?1:0) + ((possible_chars_freq[7]!=0)?1:0) + ((possible_chars_freq[8]!=0)?1:0) + ((possible_chars_freq[9]!=0)?1:0) + ((possible_chars_freq[10]!=0)?1:0) + ((possible_chars_freq[11]!=0)?1:0) + ((possible_chars_freq[12]!=0)?1:0) + ((possible_chars_freq[13]!=0)?1:0) + ((possible_chars_freq[14]!=0)?1:0) + ((possible_chars_freq[15]!=0)?1:0);
     if (((desired_uniques==0)&&(min_uniques==0)) || (desired_uniques==unique_count) || ((desired_uniques==0)&&(min_uniques>0)&&(unique_count>=min_uniques)&&(unique_count<=max_uniques))) {
-     std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << hex_chars[9] << std::endl;
+     std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << hex_chars[9] << "\n";
     }
    }
   }
@@ -410,7 +415,7 @@ int main(int argc, char *argv[]) {
           if ((possible_chars_freq[0]+possible_chars_freq[1]+possible_chars_freq[2]+possible_chars_freq[3]+possible_chars_freq[4]+possible_chars_freq[5]+possible_chars_freq[6]+possible_chars_freq[7]+possible_chars_freq[8]+possible_chars_freq[9]) >= 7) { continue; } // cannot contain 7+ numbers
           unique_count = ((possible_chars_freq[0]!=0)?1:0) + ((possible_chars_freq[1]!=0)?1:0) + ((possible_chars_freq[2]!=0)?1:0) + ((possible_chars_freq[3]!=0)?1:0) + ((possible_chars_freq[4]!=0)?1:0) + ((possible_chars_freq[5]!=0)?1:0) + ((possible_chars_freq[6]!=0)?1:0) + ((possible_chars_freq[7]!=0)?1:0) + ((possible_chars_freq[8]!=0)?1:0) + ((possible_chars_freq[9]!=0)?1:0) + ((possible_chars_freq[10]!=0)?1:0) + ((possible_chars_freq[11]!=0)?1:0) + ((possible_chars_freq[12]!=0)?1:0) + ((possible_chars_freq[13]!=0)?1:0) + ((possible_chars_freq[14]!=0)?1:0) + ((possible_chars_freq[15]!=0)?1:0);
           if ((desired_uniques == 0) || ((desired_uniques != 0) && (desired_uniques == unique_count))) {
-           std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << std::endl;
+           std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << "\n";
           }
          }
          differential = abs(slot8-slot7) + abs(slot7-slot6) + abs(slot6-slot5) + abs(slot5-slot4) + abs(slot4-slot3) + abs(slot3-slot2) + abs(slot2-slot1);
@@ -435,7 +440,7 @@ int main(int argc, char *argv[]) {
            if ((possible_chars_freq[0]+possible_chars_freq[1]+possible_chars_freq[2]+possible_chars_freq[3]+possible_chars_freq[4]+possible_chars_freq[5]+possible_chars_freq[6]+possible_chars_freq[7]+possible_chars_freq[8]+possible_chars_freq[9]) >= 8) { continue; } // cannot contain 8+ numbers
            unique_count = ((possible_chars_freq[0]!=0)?1:0) + ((possible_chars_freq[1]!=0)?1:0) + ((possible_chars_freq[2]!=0)?1:0) + ((possible_chars_freq[3]!=0)?1:0) + ((possible_chars_freq[4]!=0)?1:0) + ((possible_chars_freq[5]!=0)?1:0) + ((possible_chars_freq[6]!=0)?1:0) + ((possible_chars_freq[7]!=0)?1:0) + ((possible_chars_freq[8]!=0)?1:0) + ((possible_chars_freq[9]!=0)?1:0) + ((possible_chars_freq[10]!=0)?1:0) + ((possible_chars_freq[11]!=0)?1:0) + ((possible_chars_freq[12]!=0)?1:0) + ((possible_chars_freq[13]!=0)?1:0) + ((possible_chars_freq[14]!=0)?1:0) + ((possible_chars_freq[15]!=0)?1:0);
            if ((desired_uniques == 0) || ((desired_uniques != 0) && (desired_uniques == unique_count))) {
-            std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << std::endl;
+            std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << "\n";
            }
           }
           differential = abs(slot9-slot8) + abs(slot8-slot7) + abs(slot7-slot6) + abs(slot6-slot5) + abs(slot5-slot4) + abs(slot4-slot3) + abs(slot3-slot2) + abs(slot2-slot1);
@@ -469,9 +474,20 @@ int main(int argc, char *argv[]) {
             ++counter;
             if (counter >= start_at_long) {
              if ((stop_at_long > 0) && (counter >= stop_at_long)) { return 0; }
-              puts(hex_chars);
-              //std::cout << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << hex_chars[9] << "\n";
-              //std::cout << "DEBUG: " << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << hex_chars[9] << " (Letters: " << letter_count << " Numbers: " << number_count << " Uniques: " << unique_count << " Frequency0: " << possible_chars_freq[0] << ")" << std::endl;
+
+              // METHOD 1 - 65,250 H/s
+              //puts(hex_chars);
+
+              // METHOD 2 - 65,000 H/s
+              //printf("%s",hex_chars);
+
+              // METHOD 3 - 65,000 H/s
+              //std::cout << hex_chars;
+
+              // METHOD 4 - 65,400 H/s
+              fwrite(&hex_chars, 1, 11, stdout);
+
+              //std::cout << "DEBUG: " << hex_chars[0] << hex_chars[1] << hex_chars[2] << hex_chars[3] << hex_chars[4] << hex_chars[5] << hex_chars[6] << hex_chars[7] << hex_chars[8] << hex_chars[9] << " (Letters: " << letter_count << " Numbers: " << number_count << " Uniques: " << unique_count << " Frequency0: " << possible_chars_freq[0] << ")" << "\n";
             }
            }
 
@@ -491,17 +507,17 @@ int main(int argc, char *argv[]) {
 
 
 // debugging info
- std::cout << "counter: " << counter << std::endl;
- std::cout << "1 unique: " << uniques_counter[0] << std::endl;
- std::cout << "2 uniques: " << uniques_counter[1] << std::endl;
- std::cout << "3 uniques: " << uniques_counter[2] << std::endl;
- std::cout << "4 uniques: " << uniques_counter[3] << std::endl;
- std::cout << "5 uniques: " << uniques_counter[4] << std::endl;
- std::cout << "6 uniques: " << uniques_counter[5] << std::endl;
- std::cout << "7 uniques: " << uniques_counter[6] << std::endl;
- std::cout << "8 uniques: " << uniques_counter[7] << std::endl;
- std::cout << "9 uniques: " << uniques_counter[8] << std::endl;
- std::cout << "10 uniques: " << uniques_counter[9] << std::endl;
+ std::cout << "counter: " << counter << "\n";
+ std::cout << "1 unique: " << uniques_counter[0] << "\n";
+ std::cout << "2 uniques: " << uniques_counter[1] << "\n";
+ std::cout << "3 uniques: " << uniques_counter[2] << "\n";
+ std::cout << "4 uniques: " << uniques_counter[3] << "\n";
+ std::cout << "5 uniques: " << uniques_counter[4] << "\n";
+ std::cout << "6 uniques: " << uniques_counter[5] << "\n";
+ std::cout << "7 uniques: " << uniques_counter[6] << "\n";
+ std::cout << "8 uniques: " << uniques_counter[7] << "\n";
+ std::cout << "9 uniques: " << uniques_counter[8] << "\n";
+ std::cout << "10 uniques: " << uniques_counter[9] << "\n";
 
 
  return 0;
