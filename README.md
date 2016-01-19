@@ -86,6 +86,11 @@ Applying these rules brings it down to 564,561,702,612 combinations or 51.3% of 
 <br><br>
 Using the `-risky` parameter will bring it down even further to 367,647,332,933 or 33.4% of the keyspace (~4,412 GB in wordlist form) but with a slightly decreased chance of success.
 
+If `-no01` is used...<br>
+-without any rules there would be 289,254,654,976 (14^10) combinations (~3,471.06 GB)<br>
+-using the default rules reduces it to 183,780,015,460 combinations (or 63.5% of the keyspace) (~2,205.36 GB)<br>
+-using the `-risky` parameter reduces it to 134,081,483,174 combinations (or 46.3% of the keyspace) (~1,608.98 GB)<br>
+
 To compile on Windows (requires the <a href="http://www.microsoft.com/en-us/download/details.aspx?id=8279">Windows 7 SDK</a>):<br>
 `cl /EHsc 10hex.cpp`
 
